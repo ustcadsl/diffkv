@@ -1177,7 +1177,7 @@ void TitanDBImpl::OnMemTableSealed() {
 
 void TitanDBImpl::OnFlushCompleted(const FlushJobInfo& flush_job_info) {
   const auto& tps = flush_job_info.table_properties;
-  std::cerr <<"file name"<<  flush_job_info.file_path<< "data size: "<< tps.data_size <<"index size: " << tps.index_size <<std::endl;
+  // std::cerr <<"file name"<<  flush_job_info.file_path<< "data size: "<< tps.data_size <<"index size: " << tps.index_size <<std::endl;
   auto ucp_iter = tps.user_collected_properties.find(
       BlobFileSizeCollector::kPropertiesName);
   // sst file doesn't contain any blob index

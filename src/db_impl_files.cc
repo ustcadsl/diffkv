@@ -32,8 +32,6 @@ Status TitanDBImpl::PurgeObsoleteFilesImpl() {
       s = delete_status;
     }
   }
-  std::string cmd{"du -sk "+dbname_+" >> "+size_file_};
-  int r = system(cmd.c_str());
   return s;
 }
 

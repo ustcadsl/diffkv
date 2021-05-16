@@ -40,7 +40,7 @@ file(GLOB SOURCES src/*.cc)
 file(GLOB TEST_SOURCES src/*test.cc)
 list(REMOVE_ITEM SOURCES ${TEST_SOURCES})
 
-add_library(titan STATIC ${SOURCES} $<TARGET_OBJECTS:titan_build_version>)
+add_library(diffkv STATIC ${SOURCES} $<TARGET_OBJECTS:titan_build_version>)
 
 option(WITH_TITAN_TESTS "Build with tests." ON)
 option(WITH_TITAN_TOOLS "Build with tools." ON)

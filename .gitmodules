@@ -1,0 +1,3 @@
+[submodule "dep/rocksdb"]
+	path = dep/rocksdb
+	url = https://github.com/JiayuZzz/rocksdb.git

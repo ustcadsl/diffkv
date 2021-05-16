@@ -1,0 +1,54 @@
+# clion
+.idea
+cmake*
+CMake*
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+/Debug/
+
+.project
+.cproject
+.settings/
+
+*.result
+*.log
+*.data
+*.output
+
+redis/sample
+ycsbc
+resultDir
+*latencies*
+db_size
+
+#python cache
+.mypy_cache
+__pycache__
+#vscode cache
+.vscode

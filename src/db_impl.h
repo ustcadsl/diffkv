@@ -286,7 +286,6 @@ class TitanDBImpl : public TitanDB {
   int drop_cf_requests_ = 0;
 
   std::atomic_bool shuting_down_{false};
-  std::string size_file_{"/home/kvgroup/zhenliu/DiffKV-test/bench_tools/YCSB-C/resultDir/sizefiles/sizefile"+std::to_string(time(nullptr))};
   std::atomic<bool> block_for_size_{false};
   port::CondVar size_cv_;
   mutable port::Mutex size_mutex_;
