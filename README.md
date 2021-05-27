@@ -32,6 +32,7 @@ Minimal setup to test the prototype:
 * Tools:
     * [CMake](https://cmake.org/download/) 3.14.5+
 * Libraries:
+    * [boost](https://www.boost.org/users/download/) 1.65.0+(required)
     * [gflags](https://gflags.github.io/gflags/) 2.0+ (required for testing and benchmark code)
     * [zlib](http://www.zlib.net/) 1.2.8+ (optional)
     * [bzip2](http://www.bzip.org/) 1.0.6+ (optional)
@@ -90,7 +91,19 @@ $ ./ycsbc -db diffkv -dbfilename #path -threads 16 -P workloads/workloadpareto1K
 ```
 ### Run benchmarks based on the database
 ```
-$ ./ycsbc -db diffkv -dbfilename #path -threads 16 -P workloads/workloadpareto1KBcorea100GB.spec  -phase load -configpath configDir/diffkv_config.ini
+$ ./ycsbc -db diffkv -dbfilename #path -threads 16 -P workloads/workloadpareto1KBcorea100GB.spec  -phase run -configpath configDir/diffkv_config.ini
 
 ```
+### Configuration instructions
+```
+# sepBeforeFlush: control whether open the KV separation
+# smallThresh: equivalent to value_small in paper
+# midThresh: equivalent to value_large in paper
+# gcRatio: equivalent to gc_threshold in paper
+# runGC: control whether to enable gc
+# levelMerge: equivalent to compaction-triggered merge in paper
+# rangeMerge: equivalent to scan-optimized merge in paper
+# lazyMerge: equivalent to lazy merge in paper
+# maxSortedRuns: equivalent to max_sorted_run in paper
 
+```
