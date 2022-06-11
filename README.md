@@ -52,7 +52,7 @@ $ make static_lib -j
 # Build diffkv
 $ mkdir -p build && cd build
 $ cmake .. -DROCKSDB_DIR=$(pwd)/../dep/rocksdb  -DCMAKE_BUILD_TYPE=Release 
-$ make titan -j
+$ make diffkv -j
 ```
 
 
