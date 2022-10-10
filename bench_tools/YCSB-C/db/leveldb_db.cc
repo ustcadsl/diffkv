@@ -20,8 +20,8 @@ namespace ycsbc {
         //set options
         leveldb::Options options;
         options.create_if_missing = true;
-//	options.max_open_files = 20000;
-        options.exp_ops.noCompaction = config.getNoCompaction();
+        //	options.max_open_files = 20000;
+        // options.exp_ops.noCompaction = config.getNoCompaction();
         if(!compression)
             options.compression = leveldb::kNoCompression;
         if(bloomBits>0)
