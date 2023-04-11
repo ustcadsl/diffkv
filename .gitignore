@@ -11,3 +11,5 @@ build/
 cmake-build-debug/
 backup/
 .clion.source.upload.marker
+.clangd/
+compile_commands.json

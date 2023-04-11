@@ -114,7 +114,7 @@ endif()
 
 if (WITH_TITAN_TOOLS)
   set(TOOLS_LIBS
-        titan
+        diffkv
         rocksdb)
 
   if (NOT TRAVIS)

@@ -66,7 +66,8 @@ generate workloads by YCSB-C, the C++ version of YCSB
 ```
 $ cd bench_tools/YCSB-C
 $ sudo apt-get install libtbb-dev
-$ make 
+$ mkdir -p build && cd build 
+$ cmake .. && make -j
 ```
 ### Run tests with ycsbc
 See help message
